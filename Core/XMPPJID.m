@@ -92,9 +92,9 @@
 		}
 	}
 	
-	NSString *prepUser = [XMPPStringPrep prepNode:rawUser];
-	NSString *prepDomain = [XMPPStringPrep prepDomain:rawDomain];
-	NSString *prepResource = [XMPPStringPrep prepResource:rawResource];
+	NSString *prepUser = rawUser;
+	NSString *prepDomain = rawDomain;
+	NSString *prepResource = rawResource;
 	
 	if ([XMPPJID validateUser:prepUser domain:prepDomain resource:prepResource])
 	{
